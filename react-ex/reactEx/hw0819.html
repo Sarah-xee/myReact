@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    import React from 'react';
+import './App.css'; // 這個是引用你的外部CSS檔案
+
+function ArticlePage() {
+return (
+    <div className="container">
+      {/* 頂部標題和按鈕 */}
+    <header className="header">
+        <img src="path/to/header-image.jpg" alt="Header Image" className="header-image" />
+        <button className="header-button">
+        開用 App
+        </button>
+    </header>
+
+      {/* 文章標題 */}
+    <section className="article-title">
+        <h1>捷運圓山站景點再 +1！引進屋台與心心正統關東煮 百年宿舍「圓山驛」保留日式優雅韻味修復重生</h1>
+        <div className="article-meta">
+        <span>2024/08/15 10:16:05</span>
+        <span> | </span>
+        <span>欣傳媒</span>
+        </div>
+    </section>
+
+      {/* 文章內容 */}
+    <section className="article-content">
+        <p>台北市圓山捷運站周邊為台灣最早開發的地區，台北市近來積極推動，將老房活化後再利用...</p>
+
+        {/* 圖片及描述 */}
+        <div className="image-block">
+        <img src="path/to/image1.jpg" alt="Image 1" className="article-image" />
+        <p className="image-caption">百年古蹟宿舍「圓山驛」外觀保留日式建築風貌...</p>
+        </div>
+
+        <p>百年日式宿舍始於1901年落成，配備專屬的日式庭院，將在日治時期為高級軍官使用...</p>
+
+        {/* 另一個圖片及描述 */}
+        <div className="image-block">
+        <img src="path/to/image2.jpg" alt="Image 2" className="article-image" />
+        <p className="image-caption">圓山驛門口的美景...</p>
+        </div>
+
+        {/* 更多段落和圖片 */}
+        <p>台灣戰後，此建築成為民生單位所使用，並逐漸隨時間老舊...</p>
+
+        <div className="image-block">
+        <img src="path/to/image3.jpg" alt="Image 3" className="article-image" />
+        <p className="image-caption">修復過程中的磚牆...</p>
+        </div>
+
+        <p>新的宿舍內設有日式居酒屋...</p>
+        <div className="image-block">
+        <img src="path/to/image4.jpg" alt="Image 4" className="article-image" />
+        <p className="image-caption">圓山驛的居酒屋...</p>
+        </div>
+    </section>
+    </div>
+);
+}
+
+export default ArticlePage;
+</body>
+</html>
